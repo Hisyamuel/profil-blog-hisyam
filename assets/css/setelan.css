@@ -1,0 +1,175 @@
+/* Mengatur perilaku scroll yang halus */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Mengatur gaya untuk elemen banner */
+.banner-jumbo {
+  font-size: 20px;
+  padding: 60px;
+  background-color: navy;
+  text-align: center;
+  color: yellow;
+}
+
+/* Mengelompokkan dan mengatur gaya box model untuk elemen artikel */
+* {
+  box-sizing: border-box;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 yellow;
+  background-color: navy;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+/* Mengatur gaya dasar untuk elemen body */
+body {
+  font-size: 90%;
+  font-family: 'Parkinsans', sans-serif;
+  background-image: url(../image/background-image.jpg);
+  margin: 0;
+  padding: 0;
+}
+
+/* Mengatur gaya untuk elemen header */
+header {
+  display: inline;
+}
+
+h2, h3 {
+  color: yellow;
+}
+
+/* Mengatur warna untuk elemen paragraf */
+p {
+    color: white;
+}
+
+/* Mengatur gaya untuk elemen navigasi */
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+nav {
+  background-color: yellow;
+  padding: 5px;
+  position: sticky;
+  top: 0;
+}
+
+/* Mengatur gaya untuk elemen kartu profil */
+aside {
+  flex: 1;
+}
+
+.profile-card header {
+    text-align: center;
+}
+
+.profile-card img {
+  width: 200px;
+  border-radius: 50px;
+}
+
+.profile-card {
+    text-align: justify;
+    color: white;
+}
+
+.profile-card header h2 {
+    color: yellow;
+}
+
+.profile-card header p {
+    color: white;
+}
+
+.profile-card section h3 {
+    text-align: center;
+    color: yellow;
+}
+
+.profile-card section table {
+    padding-left: 25px;
+}
+
+.deck {
+  background-color: navy;
+  box-shadow: 0 4px 8px 0 yellow;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+/* Mengatur gaya untuk elemen konten */
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 4px 8px 0 yellow;
+  border-radius: 30px;
+}
+
+#content {
+  flex: 5;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+/* Mengatur gaya untuk elemen footer */
+footer {
+  padding: 20px;
+  background-color: navy;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer p {
+  color: yellow;
+}
+
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+   nav ul {
+    justify-content: center;
+  }
+  main aside {
+    align-self: stretch;
+  }
+}
