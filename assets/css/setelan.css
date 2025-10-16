@@ -28,7 +28,7 @@ html {
 body {
   font-size: 90%;
   font-family: 'Parkinsans', sans-serif;
-  background-image: url(../image/background-image.jpg);
+  background-color: rgb(14, 14, 76);
   margin: 0;
   padding: 0;
 }
