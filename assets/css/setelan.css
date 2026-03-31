@@ -145,12 +145,12 @@ main {
 /* Mengatur gaya untuk elemen footer */
 footer {
   padding: 20px;
-  background-color: navy;
   text-align: center;
 }
 
 footer p {
-  color: yellow;
+  font-size: small;
+  color: rgba(255, 255, 0, 0.529);
 }
 
 /* Perangkat dengan lebar layar 1200px dan di bawahnya */
